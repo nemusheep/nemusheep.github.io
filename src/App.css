@@ -33,7 +33,7 @@
   background-color: #2d2d2d;
   min-height: 8vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
   gap: 5px;
   align-items: center;
   font-size: calc(10px + 2vmin);
@@ -51,7 +51,7 @@
 }
 
 .App-header a:hover {
-  color: #ffffff;
+  color: #b3b3b3;
   text-decoration: underline;
 }
 
