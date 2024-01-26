@@ -5,18 +5,22 @@ import './App.css';
 function Header() {
     return (
         <header className='App-header'>
-            <Link to='/' className='icon'>
-                <img src={logo} className='App-logo' alt='logo' />
+            <Link to='/' className='home'>
+                <img src={logo} className='home-logo' alt='logo' />
+                <div className='home-name'>ね＝ひ</div>
             </Link>
-            <div className='menu-item'>
-                <Link to='/about'>あ</Link>
-            </div>
-            <div className='menu-item'>
-                <Link to='/page'>い</Link>
-            </div>
-            <div className='menu-item'>
-                <Link to='/page2'>う</Link>
-            </div>
+            <nav className='menu'>
+                <div className='menu-item'>
+                    <Link to='/about'>あああ</Link>
+                </div>
+                <div className='menu-item'>
+                    <Link to='/page'>いい</Link>
+                </div>
+                <div className='menu-item'>
+                    <Link to='/page2'>う</Link>
+                </div>
+            </nav>
+            
         </header>
     );
 }

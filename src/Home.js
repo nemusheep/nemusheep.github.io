@@ -1,45 +1,16 @@
 import './App.css';
+import Greeting from './Greeting';
 
 function Home() {
     return (
         <div className='App-home'>
             <h1>
-                あ
+                ねむ＝ひつじ
             </h1>
-            <p>
-                ☆工事中☆
-            </p>
-            <div className='centered-list'>
-                <ol>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                    <li>おはよう</li>
-                    <li>こんにちわ</li>
-                    <li>こんばんわ</li>
-                </ol>
+            <p></p>
+            <div className='time'>
+                <Greeting />
             </div>
-            <p>
-                ねむいよ<br /><br />おやすみ<br /><br />
-            </p>
         </div>
     );
 }
