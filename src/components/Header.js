@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import logo from './images/sheepicon.png';
-import './App.css';
+import logo from '../images/sheepicon.png';
+import '../css/App.css';
 
 function Header() {
     return (

@@ -1,5 +1,5 @@
-import xlogo from './images/xlogo.png';
-import './App.css';
+import xlogo from '../images/xlogo.png';
+import '../css/App.css';
 
 function Footer() {
     return (
