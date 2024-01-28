@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom';
-import logo from '../images/sheepicon.png';
+import sheepicon from '../images/sheepicon.png';
 import '../css/App.css';
 
 function Header() {
     return (
         <header className='App-header'>
             <Link to='/' className='home'>
-                <img src={logo} className='home-logo' alt='logo' />
-                <div className='home-name'>ね＝ひ</div>
+                <img src={sheepicon} className='home-logo' alt='logo' />
+                <div className='home-name'>home</div>
             </Link>
             <nav className='menu'>
                 <div className='menu-item'>
-                    <Link to='/about'>あああ</Link>
+                    <Link to='/about'>about</Link>
                 </div>
                 <div className='menu-item'>
-                    <Link to='/page'>いい</Link>
+                    <Link to='/illust'>illust</Link>
                 </div>
                 <div className='menu-item'>
-                    <Link to='/page2'>う</Link>
+                    <Link to='/blog'>blog</Link>
                 </div>
             </nav>
             
