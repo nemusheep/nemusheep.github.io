@@ -7,16 +7,19 @@
         <script>
             const path = sessionStorage.getItem('path');
             console.log(path);
-            if (path && path === 'react-from-meta-lang/about') {
+            if (path && path === '/react-from-meta-lang/about') {
                 sessionStorage.removeItem('path');
                 window.history.replaceState(null, null, './about');
-            } else if (path && path === 'react-from-meta-lang/illust') {
+            } else if (path && path === '/react-from-meta-lang/illust') {
                 sessionStorage.removeItem('path');
                 window.history.replaceState(null, null, './illust');
-            } else if (path && path === 'react-from-meta-lang/blog') {
+            } else if (path && path === '/react-from-meta-lang/blog') {
                 sessionStorage.removeItem('path');
                 window.history.replaceState(null, null, './blog');
             }
         </script>
     </head>
+    <body>
+        <h1>404</h1>
+    </body>
 </html>
