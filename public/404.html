@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>404</title>
         <script>
+            sessionStorage.setItem('path', location.pathname);
+            location.replace('./');
+        </script>
+        <script>
             const path = sessionStorage.getItem('path');
             console.log(path);
             if (path && path === '/react-from-meta-lang/about') {
