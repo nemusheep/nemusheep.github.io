@@ -28,13 +28,14 @@
 }
 
 .menu {
+  width: 50%;
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
 .menu-item {
-  width: 100px;
+  width: 30%;
   border-right: 1px solid #ffffff;
   padding: 0 15px 0 15px;
 }
@@ -149,14 +150,26 @@
   font-weight: bold;
 }
 
+.App-illust {
+  background-color: #ffffff;
+  line-height: 35px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .illust-card {
   display: flex;
   align-items: center;
+  max-width: 70%;
   height: 20%;
   width: auto;
   margin: 25px;
-  border: 5px solid #d0c9d5;
-  border-radius: 5px;
 }
 
 .illust-card img {
@@ -177,7 +190,11 @@
   
   .illust-card img {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .illust-card-content {
+    margin: 0 0 10px 0;
   }
 }
 
