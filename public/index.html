@@ -20,6 +20,21 @@
     <meta name="twitter:description" content="web site of nemusheep" />
     <meta name="twitter:creator" content="@mesheep_sleep" />
     <base href="/">
+    <!-- root以外にリダイレクト -->
+    <script>
+      const path = sessionStorage.getItem('path');
+      console.log(path);
+      if (path && path === '/react-from-meta-lang/about') {
+          sessionStorage.removeItem('path');
+          window.history.replaceState(null, null, './about');
+      } else if (path && path === '/react-from-meta-lang/illust') {
+          sessionStorage.removeItem('path');
+          window.history.replaceState(null, null, './illust');
+      } else if (path && path === '/react-from-meta-lang/blog') {
+          sessionStorage.removeItem('path');
+          window.history.replaceState(null, null, './blog');
+      }
+  </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
