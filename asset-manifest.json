@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.d543b497.css",
-    "main.js": "/static/js/main.6e1039b3.js",
+    "main.css": "/static/css/main.5572a493.css",
+    "main.js": "/static/js/main.7d41a866.js",
     "static/js/787.7ddb0b60.chunk.js": "/static/js/787.7ddb0b60.chunk.js",
+    "static/media/ぼきた.png": "/static/media/ぼきた.b59ba66d74d1e3be2552.png",
+    "static/media/Mercury.png": "/static/media/Mercury.3bf0e0d8d431de705706.png",
+    "static/media/緒山まひろ.png": "/static/media/緒山まひろ.868db6fd52934284460a.png",
     "static/media/twicon1.png": "/static/media/twicon1.b0e916f1588ae4c4d9d8.png",
+    "static/media/homura.png": "/static/media/homura.1c46cdc582c1b3800896.png",
     "static/media/xlogo.png": "/static/media/xlogo.c9d69acfaf852c0ddb71.png",
     "static/media/sheepicon.png": "/static/media/sheepicon.2ccc238e0efafa44bc77.png",
     "index.html": "/index.html",
-    "main.d543b497.css.map": "/static/css/main.d543b497.css.map",
-    "main.6e1039b3.js.map": "/static/js/main.6e1039b3.js.map",
+    "main.5572a493.css.map": "/static/css/main.5572a493.css.map",
+    "main.7d41a866.js.map": "/static/js/main.7d41a866.js.map",
     "787.7ddb0b60.chunk.js.map": "/static/js/787.7ddb0b60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d543b497.css",
-    "static/js/main.6e1039b3.js"
+    "static/css/main.5572a493.css",
+    "static/js/main.7d41a866.js"
   ]
 }
