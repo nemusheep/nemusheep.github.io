@@ -34,6 +34,12 @@
           sessionStorage.removeItem('path');
           window.history.replaceState(null, null, './blog');
       }
+      for (let i = 0;i < 100;i++) {
+        if (path && path === '/illust/' + String(i)) {
+          sessionStorage.removeItem('path');
+          window.history.replaceState(null, null, './illust/' + String(i));
+        }
+      }
     </script>
   </head>
   <body>

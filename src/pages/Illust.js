@@ -9,6 +9,7 @@ function Illust() {
     const { id } = useParams();
     const [pageIndex, setPageIndex] = useState(id >= 0 ? id : -1);
 
+
     const handleClick = (i) => {
         let nextPageIndex = pageIndex;
         nextPageIndex = i;
@@ -32,8 +33,8 @@ function Illust() {
                     <div className='card-container'>
                         <div className='illust-list'>
                             {images.map((image, index) => (
-                                <Link to={'/illust/' + index}>
-                                    <img key={ index } src={ imgsrcs[index] } alt={ image.alt } onClick={ () => handleClick(index) } style={{ cursor:'pointer' }}/>
+                                <Link key={ index } to={'/illust/' + index}>
+                                    <img src={ imgsrcs[index] } alt={ image.alt } onClick={ () => handleClick(index) } style={{ cursor:'pointer' }}/>
                                 </Link>
                             ))}
                         </div>
@@ -48,7 +49,9 @@ function DetailGallery({ pageIndex, onImageClick }) {
     return (
         <div className='card-container'>
             <div className='illust-card'>
+                <Link to='/illust'>
                 <img src={ imgsrcs[pageIndex] } alt={ images[pageIndex].alt } onClick={ onImageClick } style={{ cursor: 'pointer' }}/>
+                </Link>
                 <div className='illust-card-content'>
                     <h2>{ images[pageIndex].title }</h2>
                     <p>{ images[pageIndex].description }</p>
