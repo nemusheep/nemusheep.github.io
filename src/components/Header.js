@@ -17,7 +17,7 @@ function Header() {
                     <Link to='/illust'>illust</Link>
                 </div>
                 <div className='menu-item'>
-                    <Link to='/blog'>blog</Link>
+                    <Link to='/others'>others</Link>
                 </div>
             </nav>
             

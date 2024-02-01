@@ -163,17 +163,34 @@
   align-items: center;
 }
 
+.illust-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 70px;
+}
+
+.illust-list img {
+  width: 100%;
+  margin: 0px;
+  position: relative;
+}
+
+.illust-list img:hover {
+  top: -15px;
+  transition: 0.5s;
+}
+
 .illust-card {
   display: flex;
   align-items: center;
-  max-width: 70%;
+  max-width: 80%;
   height: 20%;
   width: auto;
   margin: 25px;
 }
 
 .illust-card img {
-  width: 40%;
+  width: 70%;
   margin-right: 20px;
 }
 
@@ -182,7 +199,7 @@
   margin: 25px;
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
   .illust-card {
     flex-direction: column;
     text-align: center;

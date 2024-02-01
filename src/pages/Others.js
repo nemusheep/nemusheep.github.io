@@ -1,15 +1,15 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import '../css/App.css';
 
-function Blog() {
+function Others() {
     return (
         <HelmetProvider>
             <Helmet>
-                <title>blog - ひつじの寝床</title>
+                <title>others - ひつじの寝床</title>
             </Helmet>
             <div className='App-about'>
                 <h1>
-                    ぶ
+                    その他
                 </h1>
                 <p>なんか書く</p>
                 <p>なに書こうかな</p>
@@ -19,4 +19,4 @@ function Blog() {
     );
 }
 
-export default Blog;
+export default Others;
