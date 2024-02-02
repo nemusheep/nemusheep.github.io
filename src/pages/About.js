@@ -35,7 +35,7 @@ function About() {
                     <li><div className='favorite'>イラスト</div>
                         <ul>
                             <li>描く→&ensp;
-                                <Link to='/page'>illust</Link>
+                                <Link to='/illust'>illust</Link>
                             </li>
                             <li>観る
                                 <ul>
