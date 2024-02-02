@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "sheepicon.png",
+      "src": "./images/sheepicon.png",
       "type": "image/png",
       "sizes": "500x500"
     }
