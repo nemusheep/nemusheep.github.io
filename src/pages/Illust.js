@@ -1,10 +1,18 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useState } from 'react';
 import { images, imgsrcs } from '../contents/illustration/images';
+import OgpSettings from '../components/OgpSetting';
 import ShareButton from '../components/ShareButton';
 import '../css/App.css';
 
 function Illust() {
+    const ogpData = {
+        title: 'illust - 寝床',
+        description: 'illustration of nemusheep',
+        url: '/illust',
+        image: '/images/sheepicon.png'
+    };
+    
     const [pageIndex, setPageIndex] = useState(-1);
 
     const handleClick = (i) => {
@@ -15,19 +23,7 @@ function Illust() {
 
     return (
         <HelmetProvider>
-            <Helmet>
-                <title>illust - ひつじの寝床</title>
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://nemusheep.github.io/illust" />
-                <meta property="og:title" content="illust - ひつじ" />
-                <meta property="og:description" content="illustration of nemusheep" />
-                <meta property="og:site_name" content="ひつじの寝床" />
-                <meta property="og:image" content="https://nemusheep.github.io/images/sheepicon.png" />
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:description" content="illustration of nemusheep" />
-                <meta name="twitter:image" content="https://nemusheep.github.io/images/sheepicon.png" />
-                <meta name="twitter:creator" content="@mesheep_sleep" />
-            </Helmet>
+            <OgpSettings {...ogpData} />
             <div className='App-illust'>
                 <h1>
                     pixheep
@@ -53,13 +49,10 @@ function Illust() {
 function DetailGallery({ pageIndex, onImageClick }) {
     return (
         <HelmetProvider>
-            <Helmet>
-                <title>{pageIndex + ' - illust - ひつじの寝床'}</title>
-                <meta property="og:description" content={ images[pageIndex].title } />
-                <meta property="og:image" content={"https://nemusheep.github.io/images" + images[pageIndex].src} />
-                <meta name="twitter:description" content={ images[pageIndex].title } />
-                <meta name="twitter:image" content={"https://nemusheep.github.io/images" + images[pageIndex].src} />
-            </Helmet>
+            <OgpSettings title={pageIndex + ' - illust - 寝床'}
+                description={'illustration of nemusheep'}
+                url={'/illust'}
+                image={'/images' + images[pageIndex].src} />
             <div className='card-container'>
                 <div className='illust-card'>
                     <img src={ imgsrcs[pageIndex] } alt={ images[pageIndex].alt } onClick={ onImageClick } style={{ cursor: 'pointer' }}/>
