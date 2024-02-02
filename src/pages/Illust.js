@@ -1,14 +1,11 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useState } from 'react';
-import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import { images, imgsrcs } from '../contents/illustration/images';
+import ShareButton from '../components/ShareButton';
 import '../css/App.css';
 
 function Illust() {
-    const { id } = useParams();
-    const [pageIndex, setPageIndex] = useState(id >= 0 ? id : -1);
-
+    const [pageIndex, setPageIndex] = useState(-1);
 
     const handleClick = (i) => {
         let nextPageIndex = pageIndex;
@@ -20,6 +17,12 @@ function Illust() {
         <HelmetProvider>
             <Helmet>
                 <title>illust - ひつじの寝床</title>
+                <meta property="og:url" content="https://nemusheep.github.io/illust" />
+                <meta property="og:title" content="illust - ひつじ" />
+                <meta property="og:description" content="illustration of nemusheep" />
+                <meta property="og:image" content="https://nemusheep.github.io/images/sheepicon.png" />
+                <meta name="twitter:description" content="illustration of nemusheep" />
+                <meta name="twitter:image" content="https://nemusheep.github.io/images/sheepicon.png" />
             </Helmet>
             <div className='App-illust'>
                 <h1>
@@ -33,9 +36,7 @@ function Illust() {
                     <div className='card-container'>
                         <div className='illust-list'>
                             {images.map((image, index) => (
-                                <Link key={ index } to={'/illust/' + index}>
-                                    <img src={ imgsrcs[index] } alt={ image.alt } onClick={ () => handleClick(index) } style={{ cursor:'pointer' }}/>
-                                </Link>
+                                <img key={ index } src={ imgsrcs[index] } alt={ image.alt } onClick={ () => handleClick(index) } style={{ cursor:'pointer' }}/>
                             ))}
                         </div>
                     </div> :
@@ -47,19 +48,28 @@ function Illust() {
 
 function DetailGallery({ pageIndex, onImageClick }) {
     return (
-        <div className='card-container'>
-            <div className='illust-card'>
-                <Link to='/illust'>
-                <img src={ imgsrcs[pageIndex] } alt={ images[pageIndex].alt } onClick={ onImageClick } style={{ cursor: 'pointer' }}/>
-                </Link>
-                <div className='illust-card-content'>
-                    <h2>{ images[pageIndex].title }</h2>
-                    <p>{ images[pageIndex].description }</p>
-                    <p style={{ color: '#909090' }}>Date: { images[pageIndex].date }</p>
+        <HelmetProvider>
+            <Helmet>
+                <title>{pageIndex + ' - illust - ひつじの寝床'}</title>
+                <meta property="og:description" content={ images[pageIndex].title } />
+                <meta property="og:image" content={"https://nemusheep.github.io/images" + images[pageIndex].src} />
+                <meta name="twitter:description" content={ images[pageIndex].title } />
+                <meta name="twitter:image" content={"https://nemusheep.github.io/images" + images[pageIndex].src} />
+            </Helmet>
+            <div className='card-container'>
+                <div className='illust-card'>
+                    <img src={ imgsrcs[pageIndex] } alt={ images[pageIndex].alt } onClick={ onImageClick } style={{ cursor: 'pointer' }}/>
+                    <div className='illust-card-content'>
+                        <h2>{ images[pageIndex].title }</h2>
+                        <p>{ images[pageIndex].description }</p>
+                        <p style={{ color: '#a0a0a0' }}>Date: { images[pageIndex].date }</p>
+                        <div className='illust-card-share'>
+                            <ShareButton text={ images[pageIndex].title + ' on pixseep' } url={ 'https://nemusheep.github.io/illust' } />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href={ 'https://twitter.com/intent/tweet?text=' + images[pageIndex].title + ' on pixheep&url=https://nemusheep.github.io/illust/' + pageIndex } target="_blank" rel="noopener noreferrer">ポスト(旧ツイート)する</a>
-        </div>
+        </HelmetProvider>
     );
 }
 
