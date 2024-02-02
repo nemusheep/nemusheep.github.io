@@ -6,6 +6,8 @@ function Others() {
         <HelmetProvider>
             <Helmet>
                 <title>others - ひつじの寝床</title>
+                <meta property="og:url" content="https://nemusheep.github.io/others" />
+                <meta property="og:title" content="others - ひつじ" />
             </Helmet>
             <div className='App-about'>
                 <h1>

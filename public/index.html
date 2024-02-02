@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="ひつじの寝床" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/sheepicon.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/sheepicon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>ひつじの寝床</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nemusheep.github.io/" />
-    <meta property="og:title" content="0=ひつじ" />
-    <meta property="og:description" content="ひつじのホームページ" />
+    <meta property="og:title" content="home - ひつじ" />
+    <meta property="og:description" content="web site of nemusheep" />
     <meta property="og:site_name" content="ひつじの寝床" />
-    <meta property="og:image" content="https://nemusheep.github.io/images/sleep_sheep.png" />
+    <meta property="og:image" content="https://nemusheep.github.io/images/sheepicon.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:image" content="https://nemusheep.github.io/images/sleep_sheep.png" />
+    <meta name="twitter:image" content="https://nemusheep.github.io/images/sheepicon.png" />
     <meta name="twitter:description" content="web site of nemusheep" />
     <meta name="twitter:creator" content="@mesheep_sleep" />
     <base href="/">
@@ -33,12 +33,6 @@
       } else if (path && path === '/blog') {
           sessionStorage.removeItem('path');
           window.history.replaceState(null, null, './blog');
-      }
-      for (let i = 0;i < 100;i++) {
-        if (path && path === '/' + String(i)) {
-          sessionStorage.removeItem('path');
-          window.history.replaceState(null, null, './' + String(i));
-        }
       }
     </script>
   </head>

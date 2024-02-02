@@ -166,7 +166,7 @@
 .illust-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 70px;
+  margin: 10%;
 }
 
 .illust-list img {
@@ -190,7 +190,8 @@
 }
 
 .illust-card img {
-  width: 70%;
+  width: 60%;
+  max-width: 500px;
   margin-right: 20px;
 }
 
@@ -211,7 +212,11 @@
   }
 
   .illust-card-content {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
+  }
+
+  .illust-card-share {
+    text-align: center;
   }
 }
 
