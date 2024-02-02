@@ -17,12 +17,16 @@ function Illust() {
         <HelmetProvider>
             <Helmet>
                 <title>illust - ひつじの寝床</title>
+                <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://nemusheep.github.io/illust" />
                 <meta property="og:title" content="illust - ひつじ" />
                 <meta property="og:description" content="illustration of nemusheep" />
+                <meta property="og:site_name" content="ひつじの寝床" />
                 <meta property="og:image" content="https://nemusheep.github.io/images/sheepicon.png" />
+                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:description" content="illustration of nemusheep" />
                 <meta name="twitter:image" content="https://nemusheep.github.io/images/sheepicon.png" />
+                <meta name="twitter:creator" content="@mesheep_sleep" />
             </Helmet>
             <div className='App-illust'>
                 <h1>

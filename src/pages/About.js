@@ -8,8 +8,16 @@ function About() {
         <HelmetProvider>
             <Helmet>
                 <title>about - ひつじの寝床</title>
+                <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://nemusheep.github.io/about" />
                 <meta property="og:title" content="about - ひつじ" />
+                <meta property="og:description" content="about nemusheep" />
+                <meta property="og:site_name" content="ひつじの寝床" />
+                <meta property="og:image" content="https://nemusheep.github.io/images/sheepicon.png" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:image" content="https://nemusheep.github.io/images/sheepicon.png" />
+                <meta name="twitter:description" content="about nemusheep" />
+                <meta name="twitter:creator" content="@mesheep_sleep" />
             </Helmet>
             <div className='App-about'>
                 <h1>わたしについて</h1>
