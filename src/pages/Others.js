@@ -1,6 +1,7 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import OgpSettings from '../components/OgpSetting';
 import '../css/App.css';
+import PuzzlePanel from '../components/PuzzlePanel/PuzzlePanel';
 
 const ogpData = {
     title: 'others - 寝床',
@@ -17,9 +18,8 @@ function Others() {
                 <h1>
                     その他
                 </h1>
-                <p>なんか書く</p>
-                <p>なに書こうかな</p>
-                <p>なにも書くことない</p>
+                <p>なんか載せる</p>
+                <PuzzlePanel />
             </div>
         </HelmetProvider>
     );
