@@ -18,8 +18,10 @@ function Others() {
                 <h1>
                     その他
                 </h1>
-                <p>なんか載せる</p>
-                <PuzzlePanel />
+                <div>
+                    <p>どこかで見たようなゲーム<br />左と同じになるように右を動かしてね</p>
+                    <PuzzlePanel />
+                </div>
             </div>
         </HelmetProvider>
     );

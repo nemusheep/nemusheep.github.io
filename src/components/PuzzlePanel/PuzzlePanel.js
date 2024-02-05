@@ -102,7 +102,7 @@ export default function Game() {
             if (life) {
                 statusmes += ' Click grid to restart.'
             } else {
-                statusmes += ' Game Over >_<'
+                statusmes += ' Game Over >_<  Score is ' + diff[1]; 
             }
             
         }
@@ -112,7 +112,9 @@ export default function Game() {
         <>
             <p>{'Level ' + diff[1]}</p>
             <p>{'your life × ' + life}</p>
-            <Grid ansGrid={ansGrid.Grid} isFront={currIsFront} onSetGrid={handleSetGrid} onNext={handleNextPhase} gsize={diff[0]} win={win}/>
+            <div className="board-wrapper">
+                <Grid ansGrid={ansGrid.Grid} isFront={currIsFront} onSetGrid={handleSetGrid} onNext={handleNextPhase} gsize={diff[0]} win={win}/>
+            </div>
             <p>{statusmes}</p>
             <button onClick={() => handleAnsVisible()}>showAnswer</button>
             {showAns && 
