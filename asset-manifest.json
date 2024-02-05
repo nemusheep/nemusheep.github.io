@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.784f8dba.css",
+    "main.css": "/static/css/main.142190cc.css",
     "main.js": "/static/js/main.b3db342c.js",
     "static/js/787.7ddb0b60.chunk.js": "/static/js/787.7ddb0b60.chunk.js",
     "static/media/ぼきた.png": "/static/media/ぼきた.b59ba66d74d1e3be2552.png",
@@ -11,12 +11,12 @@
     "static/media/xlogo.png": "/static/media/xlogo.c9d69acfaf852c0ddb71.png",
     "static/media/sheepicon.png": "/static/media/sheepicon.2ccc238e0efafa44bc77.png",
     "index.html": "/index.html",
-    "main.784f8dba.css.map": "/static/css/main.784f8dba.css.map",
+    "main.142190cc.css.map": "/static/css/main.142190cc.css.map",
     "main.b3db342c.js.map": "/static/js/main.b3db342c.js.map",
     "787.7ddb0b60.chunk.js.map": "/static/js/787.7ddb0b60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.784f8dba.css",
+    "static/css/main.142190cc.css",
     "static/js/main.b3db342c.js"
   ]
 }
