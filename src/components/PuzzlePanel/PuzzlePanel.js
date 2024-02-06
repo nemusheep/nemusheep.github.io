@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
-import './styles.css';
+import './PuzzlePanel.css';
 
-function Panel({ panelstate, onPanelClick }) {
+function Panel({ value, panelstate, onPanelClick }) {
     return (
         <button className="square" 
-            style={panelstate ? {backgroundColor: '#fff'} : {backgroundColor: '#000'}}
+            style={panelstate ? {backgroundColor: '#fff', color: '#bbb'} : {backgroundColor: '#000', color: '#666'}}
             onClick={onPanelClick}
-            ></button>
-    )
+            >{value}</button>
+    );
 }
 
 function generateGrid(gsize, numberOfReverse) {
@@ -111,20 +111,31 @@ export default function Game() {
     return (
         <>
             <p>{'Level ' + diff[1]}</p>
-            <p>{'your life × ' + life}</p>
+            <p>{'your life x ' + life}</p>
             <div className="board-wrapper">
                 <Grid ansGrid={ansGrid.Grid} isFront={currIsFront} onSetGrid={handleSetGrid} onNext={handleNextPhase} gsize={diff[0]} win={win}/>
             </div>
-            <p>{statusmes}</p>
+            <div className="game-info">{statusmes}</div>
             <button onClick={() => handleAnsVisible()}>showAnswer</button>
             {showAns && 
                 <div className="answer">
                     {
-                        ansGrid.Inds.map((ind, i) =>
-                            <div key={i}>
-                                {ind}
-                            </div>
-                        )
+                        ansGrid.Inds.map((ind, i) => {
+                            if (i === diff[1] - 1) {
+                                return (
+                                    <div key={i}>
+                                        {ind}
+                                    </div>
+                                );
+                            } else {
+                                return (
+                                    <div key={i}>
+                                        {ind + ', '}
+                                    </div>
+                                );
+                            }
+                            
+                        })
                     }
                 </div>
             }
@@ -170,36 +181,44 @@ function Grid({ ansGrid, isFront, onSetGrid, onNext, gsize, win }) {
 
     return (
         <>
-            <div className="board">
-                {
-                    slicedGrid(ansGrid, gridSize).map((row, i) =>
-                        <div key={i} className="board-row">
-                            {
-                                row.map((isfront, j) =>
-                                    <Panel key={j}
-                                        panelstate={isfront}
-                                    />
-                                )
-                            }
-                        </div>
-                    )
-                }
+            <div className="board-contents">
+                <div className="board">
+                    {
+                        slicedGrid(ansGrid, gridSize).map((row, i) =>
+                            <div key={i} className="board-row">
+                                {
+                                    row.map((isfront, j) =>
+                                        <Panel key={j}
+                                            value={null}
+                                            panelstate={isfront}
+                                        />
+                                    )
+                                }
+                            </div>
+                        )
+                    }
+                </div>
+                <div className="board-text">お手本</div>
             </div>
-            <div className="board">
-                {
-                    slicedGrid(isFront, gridSize).map((row, i) =>
-                        <div key={i} className="board-row">
-                            {
-                                row.map((isfront, j) =>
-                                    <Panel key={j}
-                                        panelstate={isfront}
-                                        onPanelClick={() => handleClick(gridSize*i + j)}
-                                    />
-                                )
-                            }
-                        </div>
-                    )
-                }
+            <div className="board-contents">
+                <div className="board">
+                    {
+                        slicedGrid(isFront, gridSize).map((row, i) =>
+                            <div key={i} className="board-row">
+                                {
+                                    row.map((isfront, j) =>
+                                        <Panel key={j}
+                                            value={gridSize * i + j}
+                                            panelstate={isfront}
+                                            onPanelClick={() => handleClick(gridSize * i + j)}
+                                        />
+                                    )
+                                }
+                            </div>
+                        )
+                    }
+                </div>
+                <div className="board-text">ここを動かす</div>
             </div>
         </>
     );
