@@ -1,4 +1,4 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import OgpSettings from '../components/OgpSetting';
 import sheepicon from '../images/sheepicon.png';

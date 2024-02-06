@@ -1,4 +1,4 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 import '../css/App.css';
 import Greeting from '../components/Greeting';
 import OgpSettings from '../components/OgpSetting';

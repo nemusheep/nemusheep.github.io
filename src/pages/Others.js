@@ -1,4 +1,4 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 import OgpSettings from '../components/OgpSetting';
 import '../css/App.css';
 import PuzzlePanel from '../components/PuzzlePanel/PuzzlePanel';

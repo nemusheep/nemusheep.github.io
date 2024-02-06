@@ -1,4 +1,4 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 import { useState } from 'react';
 import { images, imgsrcs } from '../contents/illustration/images';
 import OgpSettings from '../components/OgpSetting';
