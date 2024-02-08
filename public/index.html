@@ -33,6 +33,9 @@
       } else if (path && path === '/blog') {
           sessionStorage.removeItem('path');
           window.history.replaceState(null, null, './blog');
+      } else if (path && path === '/others') {
+          sessionStorage.removeItem('path');
+          window.history.replaceState(null, null, './others');
       }
     </script>
   </head>

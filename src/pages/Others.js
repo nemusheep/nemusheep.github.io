@@ -3,14 +3,14 @@ import OgpSettings from '../components/OgpSetting';
 import '../css/App.css';
 import PuzzlePanel from '../components/PuzzlePanel/PuzzlePanel';
 
-const ogpData = {
-    title: 'others - 寝床',
-    description: 'others',
-    url: '/others',
-    image: '/images/sheepicon.png'
-};
-
 function Others() {
+    const ogpData = {
+        title: 'others - 寝床',
+        description: 'others',
+        url: '/others',
+        image: '/images/sheepicon.png'
+    };
+
     return (
         <HelmetProvider>
             <OgpSettings {...ogpData} />
