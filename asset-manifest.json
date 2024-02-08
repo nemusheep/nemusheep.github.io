@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a2b60da.css",
-    "main.js": "/static/js/main.164e758f.js",
+    "main.css": "/static/css/main.59e28a99.css",
+    "main.js": "/static/js/main.d057afcf.js",
     "static/js/787.7ddb0b60.chunk.js": "/static/js/787.7ddb0b60.chunk.js",
     "static/media/ぼきた.png": "/static/media/ぼきた.b59ba66d74d1e3be2552.png",
     "static/media/Mercury.png": "/static/media/Mercury.3bf0e0d8d431de705706.png",
@@ -11,12 +11,12 @@
     "static/media/xlogo.png": "/static/media/xlogo.c9d69acfaf852c0ddb71.png",
     "static/media/sheepicon.png": "/static/media/sheepicon.2ccc238e0efafa44bc77.png",
     "index.html": "/index.html",
-    "main.4a2b60da.css.map": "/static/css/main.4a2b60da.css.map",
-    "main.164e758f.js.map": "/static/js/main.164e758f.js.map",
+    "main.59e28a99.css.map": "/static/css/main.59e28a99.css.map",
+    "main.d057afcf.js.map": "/static/js/main.d057afcf.js.map",
     "787.7ddb0b60.chunk.js.map": "/static/js/787.7ddb0b60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a2b60da.css",
-    "static/js/main.164e758f.js"
+    "static/css/main.59e28a99.css",
+    "static/js/main.d057afcf.js"
   ]
 }
