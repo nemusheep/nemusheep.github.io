@@ -19,7 +19,7 @@ function About() {
                 <h1>わたしについて</h1>
                 <img src={ sheepicon } className='image-sheep' alt='image of nemusheep' />
                 <h2>🐏 / ひつじ</h2>
-                <p>加ひつじ項なし←流石に嘘なので自己紹介のようなものを書きます</p>
+                <p>加ひつじ項なし←流石に嘘</p>
                 <div className='centered-list' >
                 <h2>基本情報</h2>
                 <ul>
@@ -30,50 +30,13 @@ function About() {
                 <h2>興味</h2>
                 <p>人工知能、感情、創作</p>
                 <h2>趣味・好きな</h2>
-                <p>特にこれが！というものです<br/>もっと詳しく書いたページも作る予定</p>
                 <ul>
-                    <li><div className='favorite'>イラスト</div>
-                        <ul>
-                            <li>描く→&ensp;
-                                <Link to='/illust'>illust</Link>
-                            </li>
-                            <li>観る
-                                <ul>
-                                    <li>rurudo</li>
-                                    <li>荻pote</li>
-                                    <li>みきさい</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><div className='favorite'>曲</div>
-                        <ul>
-                            <li>作る</li>
-                            <li>聴く
-                                <ul>
-                                    <li>広義ボカロ</li>
-                                    <li>Reol</li>
-                                    <li>DUSTCELL</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><div className='favorite'>アニメ</div>
-                        <ul>
-                            <li>STEINS;GATE</li>
-                            <li>魔法少女まどか☆マギカ</li>
-                            <li>ぼっち・ざ・ろっく！</li>
-                            <li>ウマ娘プリティダービーseason2</li>
-                        </ul>
-                    </li>
-                    <li><div className='favorite'>本</div>
-                        <ul>
-                            <li>花の鎖</li>
-                            <li>わたしを離さないで</li>
-                            <li>アンドロイドは電気羊の夢を見るか？</li>
-                        </ul>
-                    </li>
-                    </ul>
+                    <li>絵描く</li>
+                    <li>曲聴く(広義ボカロが主)</li>
+                    <li>本読む(雑食だけどSFは特に)</li>
+                </ul>
+                <h2>ひとこと</h2>
+                <p>おもしろい本、漫画、アニメいつでも募集中</p>
                     <h2>Contact</h2>
                     <ul>
                         <li>Twitter(主):&ensp;

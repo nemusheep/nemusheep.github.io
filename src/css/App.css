@@ -138,8 +138,18 @@
   line-height: 35px;
 }
 
+.App-about img {
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+}
+
 .App-about h1 {
   font-size: 30px;
+}
+
+.App-about p {
+  margin: 0 20% 0 20%;
 }
 
 .image-sheep {
