@@ -156,6 +156,10 @@
   margin: 0 auto;
 }
 
+.App-illust p {
+  margin: 0 20px 0 20px;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -190,17 +194,18 @@
 }
 
 .illust-card img {
-  width: 60%;
-  max-width: 500px;
+  width: 70%;
+  max-width: 450px;
+  min-width: 250px;
   margin-right: 20px;
 }
 
 .illust-card-content {
   flex-grow: 1;
-  margin: 25px;
+  margin: 20px;
 }
 
-@media (max-width:800px) {
+@media (max-width:730px) {
   .illust-card {
     flex-direction: column;
     text-align: center;

@@ -32,15 +32,19 @@ function Illust() {
                     <a href='https://twitter.com/myn_Mei' target='_blank' rel='noopener noreferrer'>Twitter(@myn_Mei)</a>&nbsp;あるいは&nbsp;
                     <a href='https://www.pixiv.net/users/68447218' target='_blank' rel='noopener noreferrer'>pixiv</a>&nbsp;へ
                 </p>
-                {pageIndex === -1 ?
+                {
+                    pageIndex === -1 ?
                     <div className='card-container'>
                         <div className='illust-list'>
-                            {images.map((image, index) => (
+                            {
+                                images.map((image, index) => (
                                 <img key={ index } src={ imgsrcs[index] } alt={ image.alt } onClick={ () => handleClick(index) } style={{ cursor:'pointer' }}/>
-                            ))}
+                                ))
+                            }
                         </div>
                     </div> :
-                    <DetailGallery pageIndex={ pageIndex } onImageClick={ () => handleClick(-1) }/>}
+                    <DetailGallery pageIndex={ pageIndex } onImageClick={ () => handleClick(-1) }/>
+                }
             </div>
         </HelmetProvider>
     );
