@@ -1,13 +1,18 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
+import '@/app/globals.css';
+import Greeting from "@/components/Greeting";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <p>アイウエオ</p>
-      <Link href='/about'>あばうとへ</Link>
-      <Link href='/blog'>ぶろぐへ</Link>
-    </main>
-  );
+    return (
+        <div className='App-home'>
+            <h1>
+                寝床
+            </h1>
+            <p></p>
+            <div className='time'>
+                <Greeting />
+            </div>
+        </div>
+    );
 }

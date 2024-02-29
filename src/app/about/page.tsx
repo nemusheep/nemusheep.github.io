@@ -1,9 +1,10 @@
-import styles from "../page.module.css";
+import '@/app/globals.css';
 
 export default function aboutHome() {
   return (
-    <main className={styles.main}>
-      <p>about pageだお</p>
-    </main>
+    <div className='App-about'>
+      <h1>about</h1>
+      <p>あ</p>
+    </div>
   );
 }
